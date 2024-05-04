@@ -1,0 +1,17 @@
+#appCalc{
+    height: 420px;
+    width: 300px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+#appCalc form{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+#appCalc input[type=textfield]{
+    width: 95%;
+    align-items: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Hola</h1>
+    <div id="appCalculator">
+        <form name="calculator"></form>
+            <input type="textfield" name="res" value="" autocomplete="off" readonly>
+
+            <br>
+            <input type="button" value="7" onclick="document.calculator.res.value+=7">
+            <input type="button" value="8" onclick="document.calculator.res.value+=8">
+            <input type="button" value="9" onclick="document.calculator.res.value+=9">
+            <input type="button" value="+" onclick="document.calculator.res.value+='+'">
+
+            <br>
+
+            <input type="button" value="4" onclick="document.calculator.res.value+=4">
+            <input type="button" value="5" onclick="document.calculator.res.value+=5">
+            <input type="button" value="6" onclick="document.calculator.res.value+=6">
+            <input type="button" value="-" onclick="document.calculator.res.value+='-'">
+        
+            <br>
+
+            <input type="button" value="1" onclick="document.calculator.res.value+=1">
+            <input type="button" value="2" onclick="document.calculator.res.value+=2">
+            <input type="button" value="3" onclick="document.calculator.res.value+=3">
+            <input type="button" value="x" onclick="document.calculator.res.value+='x'">
+            <br>
+            <input type="button" value="0" onclick="document.calculator.res.value+=0">
+            <input type="reset" value="C">
+            <input type="button" value="=" onclick="document.calculator.res.value = document.calculator.res.value">
+            <input type="button" value="/" onclick="document.calculator.res.value+='/'">
+
+    </div>
+</body>
+</html>
