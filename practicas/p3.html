@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Función para obtener el día de la semana y la hora actual
+      function obtenerDiaYHora() {
+        let fecha = new Date();
+        let dia = fecha.getDay(); // 0 (domingo) a 6 (sábado)
+        let hora = fecha.getHours(); // 0 a 23
+        return `Hoy es el día ${dia} de la semana y la hora actual es ${hora}`;
+      }
+
+      // Función para generar un número aleatorio y calcular su raíz cuadrada
+      function raizCuadradaAleatoria(min, max) {
+        let numeroAleatorio = Math.random() * (max - min) + min;
+        let raizCuadrada = Math.sqrt(numeroAleatorio);
+        return `El número aleatorio es ${numeroAleatorio.toFixed(
+          2
+        )} y su raíz cuadrada es ${raizCuadrada.toFixed(2)}`;
+      }
+
+      let diaYHora = obtenerDiaYHora();
+      console.log(diaYHora);
+
+      let resultadoRaizCuadrada = raizCuadradaAleatoria(1, 100);
+      console.log(resultadoRaizCuadrada);
+    </script>
+  </body>
+</html>
